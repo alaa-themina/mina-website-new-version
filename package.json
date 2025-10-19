@@ -1,0 +1,39 @@
+{
+	"repository": "#",
+	"license": "UNLICENSED",
+	"scripts": {
+		"dev": "webpack serve --config bundler/webpack.dev.js",
+		"build": "HTML_MINIFY=true webpack --config bundler/webpack.prod.js",
+		"build:pretty": "HTML_MINIFY=false webpack --config bundler/webpack.prod.js"
+	},
+	"dependencies": {
+		"gsap": "file:gsap-bonus.tgz"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.28.3",
+		"@babel/preset-env": "^7.28.3",
+		"babel-loader": "^10.0.0",
+		"copy-webpack-plugin": "^13.0.0",
+		"css-loader": "^7.1.2",
+		"css-minimizer-webpack-plugin": "^7.0.2",
+		"fast-glob": "^3.3.3",
+		"howler": "^2.2.4",
+		"html-inline-css-webpack-plugin": "^1.11.2",
+		"html-loader": "^5.1.0",
+		"html-webpack-plugin": "^5.6.3",
+		"lottie": "^0.0.1",
+		"lottie-web": "^5.13.0",
+		"mini-css-extract-plugin": "^2.9.3",
+		"nunjucks": "^3.2.4",
+		"nunjucks-html-loader": "^1.1.0",
+		"portfinder-sync": "0.0.2",
+		"robotstxt-webpack-plugin": "^8.0.0",
+		"sitemap-webpack-plugin": "^1.1.1",
+		"terser-webpack-plugin": "^5.3.14",
+		"webpack": "^5.101.3",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.2",
+		"webpack-merge": "^6.0.1",
+		"workbox-webpack-plugin": "^7.3.0"
+	}
+}

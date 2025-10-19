@@ -1,0 +1,79 @@
+/*!
+	* Mina - EN Stylesheet
+*/
+body,
+input,
+select,
+textarea {
+	font-family: "Instrument", sans-serif;
+}
+
+h1,
+h2,
+.label,
+.hubot {
+	font-family: 'Hubot Sans';
+}
+
+.burger_close span i,
+._underline:before,
+.header_sides > i {
+	transform-origin: 0 0;
+}
+
+.list_bg,
+.burger_button i,
+.burger_close span i:first-child {
+	transform-origin: 100% 100%;
+}
+
+.list_block_logo {
+	transform-origin: center right;
+}
+
+/* Left & Right */
+.section-intro-container .scroll_button,
+.more_button svg,
+.list_side_wrap,
+.list_bg,
+.list_block_side:nth-child(3) {
+	right: 0;
+}
+
+.more_button:before,
+.more_button:after {
+	left: 0;
+	right: 2em;
+}
+
+.circle_title:nth-child(4) {
+	right: -1.5em;
+}
+
+#intro ._hide,
+#contact ._show {
+	left: 0;
+}
+
+.circle_title:nth-child(3) {
+	left: -1.5em;
+}
+
+
+/* Responsiveness */
+@media (min-width: 601px) {
+	.media-team {
+		right: 6em;
+	}
+	.canvas_wrap {
+		right: 0;
+	}
+	.list_bg {
+		-webkit-border-top-left-radius: 7em;
+		-webkit-border-bottom-left-radius: 7em;
+		-moz-border-radius-topleft: 7em;
+		-moz-border-radius-bottomleft: 7em;
+		border-top-left-radius: 7em;
+		border-bottom-left-radius: 7em;
+	}
+}
