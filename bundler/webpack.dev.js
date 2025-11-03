@@ -35,17 +35,8 @@ module.exports = merge(commonConfiguration, {
 			watch: true,
 			directory: path.join(__dirname, '../src/static'),
 		},
-		client: { 
-			logging: 'none', 
-			overlay: true, 
-			progress: false,
-			webSocketURL: {
-				protocol: 'auto', // Auto-detect protocol: 'ws' for http, 'wss' for https
-				hostname: 'auto',
-				port: 'auto',
-				pathname: '/ws'
-			}
-		},
+		client: { logging: 'none', overlay: true, progress: false },
+
 		// Clean URL handling:
 		//  - "/"               -> /index.html
 		//  - "/about" or "/"   -> /about/index.html
