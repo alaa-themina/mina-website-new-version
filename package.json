@@ -5,7 +5,7 @@
 		"dev": "webpack serve --config bundler/webpack.dev.js",
 		"build": "HTML_MINIFY=true webpack --config bundler/webpack.prod.js",
 		"build:pretty": "HTML_MINIFY=false webpack --config bundler/webpack.prod.js",
-		"start": "npm run build && serve dist -p 8080 -s"
+		"start": "node server.js"
 	},
 	"dependencies": {
 		"gsap": "file:gsap-bonus.tgz"
@@ -36,6 +36,6 @@
 		"webpack-dev-server": "^5.2.2",
 		"webpack-merge": "^6.0.1",
 		"workbox-webpack-plugin": "^7.3.0",
-		"serve": "^14.2.1"
+		"express": "^4.18.2"
 	}
 }
